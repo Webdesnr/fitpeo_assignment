@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
-import { Box } from "@chakra-ui/react";
+import { Box, HStack } from "@chakra-ui/react";
 
 interface Props {
   children: ReactNode;
 }
 
 function Content({ children }: Props) {
-  return <Box>{children}</Box>;
+  return <HStack justifyContent="center">{children}</HStack>;
 }
 
 export default Content;

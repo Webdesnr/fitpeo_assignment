@@ -6,7 +6,7 @@ function Header() {
       <Heading as="h3" fontSize={{ md: "xl" }}>
         Customers
       </Heading>
-      <Text color="gray" fontSize={{ lg: "x-small", xl: "sm" }}>
+      <Text color="gray" fontSize={{ base: "sm", xl: "sm" }}>
         Customers that buy products
       </Text>
     </Box>
