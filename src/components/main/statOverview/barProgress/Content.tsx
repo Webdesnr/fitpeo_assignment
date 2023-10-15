@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Stack } from "@chakra-ui/react";
+import { Box, Flex } from "@chakra-ui/react";
 import { ReactNode } from "react";
 
 interface Props {
@@ -11,7 +11,6 @@ function Content({ children }: Props) {
       <Flex justifyContent="space-between" minWidth={500}>
         {children}
       </Flex>
-      ;
     </Box>
   );
 }
