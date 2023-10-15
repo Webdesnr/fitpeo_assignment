@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Box, Container, VStack } from "@chakra-ui/react";
+import { Box } from "@chakra-ui/react";
 import Content from "./Content";
 import Header from "./Header";
 import StatBar from "./statBar";

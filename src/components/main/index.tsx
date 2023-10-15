@@ -1,4 +1,4 @@
-import { Box, Grid, GridItem } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import DashboardCards from "./dashboardCard";
 import Header from "./header";
 import StatView from "./statOverview";

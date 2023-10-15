@@ -1,13 +1,4 @@
-import {
-  Box,
-  Icon,
-  ListItem,
-  ListIcon,
-  Text,
-  HStack,
-  Flex,
-  As,
-} from "@chakra-ui/react";
+import { Icon, ListItem, Text, HStack, Flex, As } from "@chakra-ui/react";
 import { useState } from "react";
 
 interface Props {
