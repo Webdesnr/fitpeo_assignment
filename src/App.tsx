@@ -15,7 +15,7 @@ function App() {
         bg={{ base: "default", lg: "blue.700" }}
         paddingX={{ base: "1", lg: "5" }}
       >
-        <Box position="fixed">
+        <Box position="sticky" top={{ base: 5, lg: 8 }}>
           <SideBar>
             <SideBarHeading />
             <SideBarList />

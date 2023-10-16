@@ -53,7 +53,10 @@ function DashboardCards() {
     },
   ];
   return (
-    <SimpleGrid columns={{ base: 1, sm: 2, xl: 3 }} gap={{ base: 5, lg: 10 }}>
+    <SimpleGrid
+      columns={{ base: 1, sm: 2, xl: 3, "2xl": 4 }}
+      gap={{ base: 5, lg: 10 }}
+    >
       {cards.map((card) => (
         <Box key={card.label}>
           <CardLayout

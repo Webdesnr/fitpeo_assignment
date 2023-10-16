@@ -1,12 +1,12 @@
 import { ReactNode } from "react";
-import { VStack } from "@chakra-ui/react";
+import { Box, VStack } from "@chakra-ui/react";
 
 interface Props {
   children: ReactNode;
 }
 
 function SideBar({ children }: Props) {
-  return <VStack alignItems="left">{children}</VStack>;
+  return <Box>{children}</Box>;
 }
 
 export default SideBar;

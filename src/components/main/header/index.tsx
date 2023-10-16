@@ -1,15 +1,7 @@
-import {
-  Box,
-  HStack,
-  Input,
-  InputGroup,
-  InputLeftElement,
-  Text,
-  Icon,
-} from "@chakra-ui/react";
-import { Search2Icon } from "@chakra-ui/icons";
+import { Box, HStack, Text, Icon } from "@chakra-ui/react";
 import { BiUserCircle } from "react-icons/bi";
 import { PiHandWavingFill } from "react-icons/pi";
+import SearchBOx from "../../common/SearchBox";
 
 const Header = () => {
   return (
@@ -28,12 +20,7 @@ const Header = () => {
           Hello shahrukh
           <Icon as={PiHandWavingFill} color="#DCB899" fontSize="2xl" />,
         </Text>
-        <InputGroup width={{ base: "auto" }}>
-          <InputLeftElement>
-            <Search2Icon color="GrayText" />
-          </InputLeftElement>
-          <Input placeholder="Search" bg="white" border="none" />
-        </InputGroup>
+        <SearchBOx />
       </HStack>
     </Box>
   );

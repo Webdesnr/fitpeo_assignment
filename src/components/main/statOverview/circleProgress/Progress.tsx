@@ -18,7 +18,7 @@ function Progress() {
     >
       <CircularProgress
         position="absolute"
-        size={"190px"}
+        size="190px"
         color="gray"
         thickness="15"
         left="50%"
@@ -34,7 +34,7 @@ function Progress() {
       <CircularProgress
         position="absolute"
         size="190px"
-        color={"purple.500"}
+        color="purple.500"
         trackColor="transparent"
         thickness="20"
         left="50%"
@@ -48,7 +48,7 @@ function Progress() {
         thickness="25"
         left="50%"
         transform={"translateX(-50%)"}
-        value={20}
+        value={60 - 40}
       />
     </Box>
   );

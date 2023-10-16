@@ -7,7 +7,7 @@ function SideBarHeading() {
       as="h4"
       fontSize="3xl"
       fontWeight="medium"
-      marginY={{ base: "1rem", lg: "2rem" }}
+      marginY={{ base: "5", lg: "8" }}
       color={{ base: "blue.700", lg: "white" }}
     >
       <HStack justifyContent={{ base: "center", lg: "flex-start" }}>

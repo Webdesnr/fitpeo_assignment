@@ -10,44 +10,26 @@ import {
   MenuList,
   Text,
 } from "@chakra-ui/react";
-import { ChevronDownIcon } from "@chakra-ui/icons";
+import DropMenu from "../../../common/DropMenu";
 
 function Header() {
   const [selectedItem, setSelectedItem] = useState("Quarterly");
-  const menuItems = ["Quarterly", "Yearly", "Monthly"];
+  const options = ["Quarterly", "Yearly", "Monthly"];
   return (
     <HStack justifyContent="space-between">
       <Box>
-        <Heading as="h6" fontSize={{ base: "sm", md: "xl" }}>
+        <Heading as="h3" fontSize={{ base: "sm", md: "xl" }}>
           Overview
         </Heading>
         <Text color="gray" fontSize={{ base: "x-small", md: "lg" }}>
           Monthly Earning
         </Text>
       </Box>
-      <Menu>
-        <MenuButton
-          fontSize={{ base: "sm", md: "lg" }}
-          as={Button}
-          color="gray"
-          bg="whitesmoke"
-          variant="solid"
-          rightIcon={<ChevronDownIcon />}
-        >
-          {selectedItem}
-        </MenuButton>
-        <MenuList>
-          {menuItems.map((item) => (
-            <MenuItem
-              key={item}
-              onClick={() => setSelectedItem(item)}
-              fontSize={{ base: "sm", md: "lg" }}
-            >
-              {item}
-            </MenuItem>
-          ))}
-        </MenuList>
-      </Menu>
+      <DropMenu
+        label={selectedItem}
+        menuItems={options}
+        onClick={(item: string) => setSelectedItem(item)}
+      />
     </HStack>
   );
 }
