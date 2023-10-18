@@ -15,6 +15,7 @@ function Progress() {
       boxShadow="base"
       padding={{ base: 3, md: 5 }}
       width="min-content"
+      zIndex="0"
     >
       <CircularProgress
         position="absolute"

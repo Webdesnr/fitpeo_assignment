@@ -1,11 +1,8 @@
-import { useState } from "react";
-
-import { Heading, HStack, Stack } from "@chakra-ui/react";
+import { Box, Heading, HStack, Stack } from "@chakra-ui/react";
 import DropMenu from "../../common/DropMenu";
 import SearchBOx from "../../common/SearchBox";
 
 function Header() {
-  const [selectedItem, setSelectedItem] = useState("Last 30 Days");
   const options = ["Last 30 days", "Last Week", "Last Year"];
   return (
     <Stack
@@ -18,11 +15,9 @@ function Header() {
       </Heading>
       <HStack flexDir={{ base: "column", sm: "row" }}>
         <SearchBOx bgColor="whitesmoke" />
-        <DropMenu
-          label={selectedItem}
-          menuItems={options}
-          onClick={(item: string) => setSelectedItem(item)}
-        />
+        <Box width={{ base: "100%", sm: "inherit" }}>
+          <DropMenu menuItems={options} />
+        </Box>
       </HStack>
     </Stack>
   );

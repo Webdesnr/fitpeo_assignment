@@ -9,7 +9,7 @@ import {
   Tr,
 } from "@chakra-ui/react";
 import Product from "../../../services/productService";
-import ProductCard from "./ProductCard";
+import DetailCard from "../../common/DetailCard";
 
 interface Props {
   productLists: Product[];
@@ -39,7 +39,7 @@ function ProductTable({ productLists }: Props) {
           {productLists.map((list) => (
             <Tr key={list.id} _before={{ border: "0" }}>
               <Td paddingLeft="0">
-                <ProductCard
+                <DetailCard
                   avator={list.image}
                   title={list.name}
                   subTitle={list.description}

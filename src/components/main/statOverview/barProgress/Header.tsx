@@ -1,19 +1,7 @@
-import { useState } from "react";
-import {
-  Box,
-  Button,
-  Heading,
-  HStack,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuList,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Heading, HStack, Text } from "@chakra-ui/react";
 import DropMenu from "../../../common/DropMenu";
 
 function Header() {
-  const [selectedItem, setSelectedItem] = useState("Quarterly");
   const options = ["Quarterly", "Yearly", "Monthly"];
   return (
     <HStack justifyContent="space-between">
@@ -25,11 +13,9 @@ function Header() {
           Monthly Earning
         </Text>
       </Box>
-      <DropMenu
-        label={selectedItem}
-        menuItems={options}
-        onClick={(item: string) => setSelectedItem(item)}
-      />
+      <Box>
+        <DropMenu menuItems={options} />
+      </Box>
     </HStack>
   );
 }

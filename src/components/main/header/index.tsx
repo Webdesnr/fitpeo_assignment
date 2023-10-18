@@ -1,17 +1,16 @@
 import { Box, HStack, Text, Icon } from "@chakra-ui/react";
-import { BiUserCircle } from "react-icons/bi";
 import { PiHandWavingFill } from "react-icons/pi";
 import SearchBOx from "../../common/SearchBox";
+import UserIcon from "./UserIcon";
 
 const Header = () => {
   return (
     <Box paddingY={{ base: "5", lg: "8" }}>
-      <HStack justifyContent="space-between">
-        <Icon
-          as={BiUserCircle}
-          display={{ base: "block", sm: "none" }}
-          fontSize="4xl"
-        />
+      <HStack
+        flexDir={{ base: "row-reverse", sm: "row" }}
+        justifyContent="space-between"
+      >
+        <UserIcon />
         <Text
           display={{ base: "none", sm: "block" }}
           fontWeight={{ sm: "medium" }}
